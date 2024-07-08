@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "postcss.config.js",
   "scripts": {
-    "test": "jest --testPathPattern=./src/ --env=jsdom",
+    "test": "jest --testPathPattern=./src/",
     "lint": "eslint",
     "start": "webpack serve --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "e2e": "jest --testPathPattern=./e2e/"
   },
   "repository": {
     "type": "git",

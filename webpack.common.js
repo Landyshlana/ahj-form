@@ -7,7 +7,7 @@ module.exports = {
   target: 'web',
   devtool: 'inline-source-map',
   devServer: {
-    port: 9001,
+    port: 9000,
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
