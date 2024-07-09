@@ -1,6 +1,6 @@
-image: Ubuntu1804  # образ для сборки
+image: Ubuntu1704  # образ для сборки
 
-stack: node 18.2  # окружение
+stack: node 17.2  # окружение
 
 branches:
   only:
