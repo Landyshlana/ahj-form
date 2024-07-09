@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "postcss.config.js",
   "scripts": {
-    "test": "jest --testPathPattern=./src",
+    "test": "jest --testPathPattern=./src/ --env=jsdom",
     "lint": "eslint",
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
