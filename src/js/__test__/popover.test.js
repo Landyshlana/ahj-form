@@ -1,4 +1,5 @@
 import Popover from '../popover';
+
 describe('popover', () => {
 	
 	let container;
@@ -13,15 +14,21 @@ describe('popover', () => {
 	})
 
 test('bindToDOM enables markup DOM', () => {
-	expect(popoverEl.container.innerHTML).toEqual(Popover.markUp);
+	const popover = new Popover();
+    popover.bindToDOM(container);
+	expect(popover.container.innerHTML).toEqual(Popover.markUp);
 });
 
 test('геттер возвращает елемент tooltip', () => {
-	expect(popoverEl.popover.classList.contains('popover')).toBeTruthy();
+	const popover = new Popover();
+    popover.bindToDOM(container);
+	expect(popover.popover.classList.contains('popover')).toBeTruthy();
 });
 
 test('showTooltip меняет значение this.show при включении подсказки', () => {
-	popoverEl.showTooltip(document.createElement('div'));
-	expect(popoverEl.show).toBe(true);
+	const popover = new Popover();
+    popover.bindToDOM(container);
+	popover.showTooltip(document.createElement('div'));
+	expect(popover.show).toBe(true);
 });
 });
