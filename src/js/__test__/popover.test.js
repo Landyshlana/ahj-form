@@ -16,19 +16,18 @@ describe('popover', () => {
 test('bindToDOM enables markup DOM', () => {
 	const popover = new Popover();
     popover.bindToDOM(container);
-	expect(popover.container.innerHTML).toEqual(Popover.markUp);
+	expect(container.insertAdjacentHTML).toEqual(Popover.markUp);
 });
 
 test('геттер возвращает елемент tooltip', () => {
 	const popover = new Popover();
-    popover.bindToDOM(container);
+  
 	expect(popover.popover.classList.contains('popover')).toBeTruthy();
 });
 
 test('showTooltip меняет значение this.show при включении подсказки', () => {
 	const popover = new Popover();
-    popover.bindToDOM(container);
-	popover.showTooltip(document.createElement('div'));
+   	popover.showTooltip(document.createElement('div'));
 	expect(popover.show).toBe(true);
 });
 });
