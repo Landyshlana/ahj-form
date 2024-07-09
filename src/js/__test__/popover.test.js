@@ -1,8 +1,16 @@
 import Popover from '../popover';
-
-const container = document.querySelector('.container');
-const popoverEl = new Popover(container);
-popoverEl.bindToDOM();
+describe('popover', () => {
+	
+	let container;
+  
+	beforeAll(async () => {
+		container = document.createElement('div');
+		document.body.appendChild(container);
+	});
+  
+	afterAll(async () => {
+		document.body.removeChild(container);
+	})
 
 test('bindToDOM enables markup DOM', () => {
 	expect(popoverEl.container.innerHTML).toEqual(Popover.markUp);
@@ -15,4 +23,5 @@ test('геттер возвращает елемент tooltip', () => {
 test('showTooltip меняет значение this.show при включении подсказки', () => {
 	popoverEl.showTooltip(document.createElement('div'));
 	expect(popoverEl.show).toBe(true);
+});
 });
