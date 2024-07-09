@@ -27,7 +27,7 @@ export default class Popover {
 	}
 
 	bindToDOM() {
-		this.container.insertAdjacentHTML('afterbegin', this.container.markUp);
+		this.container.insertAdjacentHTML('afterbegin', this.constructor.markUp);
 	}
 
 	showTooltip() {

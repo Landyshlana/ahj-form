@@ -16,7 +16,7 @@ describe('popover', () => {
 test('bindToDOM enables markup DOM', () => {
 	const popover = new Popover();
     popover.bindToDOM(container);
-	expect(container.insertAdjacentHTML).toEqual(Popover.markUp);
+	expect(container.innerHTML).toEqual(Popover.markUp);
 });
 
 test('геттер возвращает елемент tooltip', () => {
