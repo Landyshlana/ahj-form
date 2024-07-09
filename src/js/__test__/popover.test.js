@@ -1,6 +1,6 @@
 import Popover from '../popover';
 
-const container = document.createElement('div');
+const container = document.querySelector('.container');
 const popoverEl = new Popover(container);
 popoverEl.bindToDOM();
 
