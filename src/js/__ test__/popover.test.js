@@ -1,7 +1,9 @@
 import Popover from "../popover";
 
+const container = document.createElement('div');
+const popover = new Popover(container);
+popover.bindToDOM();
+
 test('popover', () => {
-    const popover = new Popover();
-    popover.bindToDOM(container);
-    expect(container.innerHTML).toEqual(Popover.markUp);
-  });
+	expect(popover.container.innerHTML).toEqual(Popover.markUp);
+});
