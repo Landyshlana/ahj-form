@@ -1,60 +1,32 @@
-*{
-  box-sizing:border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 .btn {
-  background: #113947;
+  margin-top: 100px;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
   padding: 0.375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: .25rem;
-  border: 2px solid #113947;
-  display:flex;
-  margin:0 auto;
-  color:#fff;
-  width:20rem;
-  justify-content:center;
-  border-radius:25px;
+  background-color: #fad648;
+  border: 1px solid #ced4da;
+  border-radius:5px;
 }
-.btn:hover{
-  background: #fff;
-  color:#113947;
-}
-.popover{
-  display:flex;
-  flex-direction:column;
-  width:20rem;
+.popover-container{
+  position: absolute;
+  width: 250px;
   height: fit-content;
   inset: 0px;
-  margin: auto;
-  padding: 1em;
-  align-items: center;
-  border-radius:25px;
-  background: #113947;
+  border: solid orang 1px;
+  padding: 0.25em;
+  background:#f2f1ed;
 }
-
-.text {
-	overflow: hidden;
-  overflow-wrap: normal;
-  white-space:normal;
-  font-size: 1em;
-  color:#fff;
-  text-align: center;
-  margin:0;
+.title{font-size:16px;
 }
-
-.title {
-	font-weight:400;
-	margin:0;
-  color:#fff;
+.text{font-size:14px;
 }
-
-
-.hidden {
-	display: none;
+.hidden{display:none;
 }
-.container {
-  gap:5px;
-	display: flex;
-	flex-direction: column;
+body {
+text-align:center;
 }
- 
