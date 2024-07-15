@@ -1,4 +1,4 @@
-import Popover from "./popover";
+import Popover from "../popover";
 
 test('popover', () => {
     const popover = new Popover();
